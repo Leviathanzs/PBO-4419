@@ -1,0 +1,1 @@
+D:\KyKy\Kuliah\PBO\Minggu-2\Kotlin\JavaToKotlin\build\classes\kotlin\main\MainKt.class;D:\KyKy\Kuliah\PBO\Minggu-2\Kotlin\JavaToKotlin\build\classes\kotlin\main\Mobil.class;D:\KyKy\Kuliah\PBO\Minggu-2\Kotlin\JavaToKotlin\build\classes\kotlin\main\Mobil2.class
