@@ -1,8 +1,8 @@
-class Buku(var Judul: String, var Pengarang: String, var Penerbit: String, var Tahun: Int)
+class Buku (var Judul: String, var Pengarang: String, var Penerbit: String, var Tahun: Int)
 
 fun main(args: Array<String>) {
-    val cetakBuku = Buku("Sang Pemimpi", "Andrea Hirata", "Bentang Pustaka", 2007)
-    val cetakBuku2 = Buku ("Konsep & Perancangan DATABASE", "Ir. Harianto Kristanto", "Andi", 2004)
+    val cetakBuku = Buku("PBO", "Indra", "Elex", 2007)
+    val cetakBuku2 = Buku ("Java", "Ajib", "Andi", 2007)
 
     println("Judul      : ${cetakBuku.Judul}")
     println("Pengarang  : ${cetakBuku.Pengarang}")
