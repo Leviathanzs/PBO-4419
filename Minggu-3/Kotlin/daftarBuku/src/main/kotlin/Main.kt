@@ -5,7 +5,7 @@ class buku(){
     var tahun: Int = 0
 
     // konstruktor
-    constructor(judul: String, pengarang: String, penerbit: String, tahun: Int): this(){
+    constructor(judul: String, pengarang: String, penerbit: String, tahun: Int) : this() {
         this.judul = judul
         this.pengarang = pengarang
         this.penerbit = penerbit
@@ -14,10 +14,10 @@ class buku(){
 
     // method
     fun cetakBuku(){
-        println("Judul: $judul")
-        println("Pengarang: $pengarang")
-        println("Penerbit: $penerbit")
-        println("Tahun: $tahun")
+        println("Judul      : $judul")
+        println("Pengarang  : $pengarang")
+        println("Penerbit   : $penerbit")
+        println("Tahun      : $tahun")
     }
 }
 
@@ -25,6 +25,7 @@ fun main(args: Array<String>) {
     // create object buku
     val buku1 = buku("Pemrograman Berbasis Objek Dengan Java", "Indraiani", "Elexmedia Komputindo", 2007)
     buku1.cetakBuku()
+    println("")
     val buku2 = buku("Dasar Pemrograman Java", "Abdul Kadir", "Andi Offset", 2004)
     buku2.cetakBuku()
 }
