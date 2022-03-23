@@ -1,35 +1,29 @@
-class Mobil(){
-    var warna: String = ""
-    var tahun: Int = 0
-    fun warna(warna: String){
-        println("Warna: " + warna)
-    }
-    fun tahun(tahun: Int){
-        println("Tahun: " + tahun)
-    }
+class Mobil{
+    fun warna(warna: String) = println("Warna: $warna")
+    fun tahun(tahun: Int) = println("Tahun: $tahun")
 }
 class Mobil2{
-    var gear: Int = 0
+    private var gear: Int = 0
 
-    fun starter(mesin: Int){
-        if (mesin == 1){
+    fun starter(mesin: Int) = when (mesin) {
+        1 -> {
             println("Mesin Nyala")
         }
-        else if(mesin == 0){
+        0 -> {
             println("Mesin Mati")
         }
-        else{
+        else -> {
             println("Error")
         }
     }
 
     fun changeGearUp(up: Int){
-        gear = gear + up
-        println("Gear: "+ gear)
+        gear += up
+        println("Gear: $gear")
     }
     fun changeGearDown(down: Int){
-        gear = gear - down
-        println("Gear: "+ gear)
+        gear -= down
+        println("Gear: $gear")
     }
 }
 
