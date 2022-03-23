@@ -1,20 +1,15 @@
 //superClass(Inheritance)
-open class people{
+open class judul{
     var judul: String = "Universitas Dian Nuswantoro"
 }
 
 //subClass
-class mahasiswa : people(){
+class mahasiswa : judul(){
     //class function
     fun nama (nama: String) = println("Nama: $nama")
     fun nim (nim: String) = println("Nim: $nim")
     fun semester (semester: Int) = println("Semester: $semester")
-
-    class dosen {
-        //class function
-        fun nama (nama: String) = println("Nama: $nama")
-        fun nim (nim: String) = println("Nim: $nim")
-    }
+    //memanggil judul dalam class people
     fun iniJudul(){
         println(judul)
     }
@@ -25,7 +20,6 @@ class faculty(var fakultas: String)
 fun main(args: Array<String>) {
     //object
     val Mahasiswa = mahasiswa()
-    val Dosen = mahasiswa.dosen()
     //mengisi parameter constructor
     val Fakultas = faculty("Fakultas Ilmu Komputer")
 
@@ -36,8 +30,4 @@ fun main(args: Array<String>) {
     Mahasiswa.nama("Oky Satria W")
     Mahasiswa.nim ("A11.2020.12674")
     Mahasiswa.semester(4)
-    println("")
-    Dosen.nama("Mr.k")
-    Dosen.nim("S11.2010.21342")
-
 }
