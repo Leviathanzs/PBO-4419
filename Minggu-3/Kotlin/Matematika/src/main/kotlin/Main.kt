@@ -6,19 +6,19 @@ class Matematika {
 
     fun pertambahan(x: Int, y: Int){
         tambah = x+y
-        println("Pertambahan    : "+ x + "+" + y + "=" + tambah)
+        println("Pertambahan    : $x+$y=$tambah")
     }
     fun pengurangan(x: Int, y: Int){
         kurang = x-y
-        println("Pengurangan    : "+ x + "-" + y + "=" + kurang)
+        println("Pengurangan    : $x-$y=$kurang")
     }
     fun perkalian(x: Int, y: Int){
         kali = x+y
-        println("Perkalian      : "+ x + "*" + y + "=" + kali)
+        println("Perkalian      : $x*$y=$kali")
     }
     fun pembagian(x: Int, y: Int){
         bagi = x+y
-        println("Pembagian      : "+ x + "/" + y + "=" + bagi)
+        println("Pembagian      : $x/$y=$bagi")
     }
 }
 
