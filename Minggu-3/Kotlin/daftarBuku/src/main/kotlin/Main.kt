@@ -1,18 +1,32 @@
-class Buku (var Judul: String, var Pengarang: String, var Penerbit: String, var Tahun: Int)
+class buku(){
+    var judul: String = ""
+    var pengarang: String = ""
+    var penerbit: String = ""
+    var tahun: Int = 0
+
+    // konstruktor
+    constructor(judul: String, pengarang: String, penerbit: String, tahun: Int): this(){
+        this.judul = judul
+        this.pengarang = pengarang
+        this.penerbit = penerbit
+        this.tahun = tahun
+    }
+
+    // method
+    fun cetakBuku(){
+        println("Judul: $judul")
+        println("Pengarang: $pengarang")
+        println("Penerbit: $penerbit")
+        println("Tahun: $tahun")
+    }
+}
 
 fun main(args: Array<String>) {
-    val cetakBuku = Buku("PBO", "Indra", "Elex", 2007)
-    val cetakBuku2 = Buku ("Java", "Ajib", "Andi", 2007)
-
-    println("Judul      : ${cetakBuku.Judul}")
-    println("Pengarang  : ${cetakBuku.Pengarang}")
-    println("Penerbit   : ${cetakBuku.Penerbit}")
-    println("Tahun      : ${cetakBuku.Tahun}\n")
-
-    println("Judul      : ${cetakBuku2.Judul}")
-    println("Pengarang  : ${cetakBuku2.Pengarang}")
-    println("Penerbit   : ${cetakBuku2.Penerbit}")
-    println("Tahun      : ${cetakBuku2.Tahun}")
+    // create object buku
+    val buku1 = buku("Pemrograman Berbasis Objek Dengan Java", "Indraiani", "Elexmedia Komputindo", 2007)
+    buku1.cetakBuku()
+    val buku2 = buku("Dasar Pemrograman Java", "Abdul Kadir", "Andi Offset", 2004)
+    buku2.cetakBuku()
 }
 
 
