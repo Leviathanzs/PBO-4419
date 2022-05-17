@@ -7,7 +7,7 @@ open class Person() {
     }
 }
 
-//memubat class child
+//memubat child class
 class Girl: Person() {
     //untuk menulis ulang funtion dari parent class
     override fun displayAge(age: Int) {
